@@ -3,8 +3,8 @@
         <a class="navbar-brand" href="/movies">
             Movies
         </a>
-        <a href="/add" class="navbar-brand">
-            Add
+        <a href="/movies/create" class="navbar-brand">
+            Add movie
         </a>
     </div>
 </nav>
