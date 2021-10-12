@@ -19,4 +19,14 @@
     {{ $movie->storyline  }}
 </p>
 
+<h4>Comments</h4>
+@forelse($movie->comments as $comment)
+{{ $comment->content }}
+<p>At {{ $comment->created_at }}</p>
+@empty
+<span>No comments</span>
+@endforelse
+
+
+
 @endsection
