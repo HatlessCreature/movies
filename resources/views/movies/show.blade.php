@@ -7,7 +7,9 @@
     {{ $movie->title  }}
 </h2>
 <p>
+    <a href="{{route('genre', ['genre' => $movie->genre])}}">
     {{ $movie->genre  }}
+    </a>
 </p>
 <p>
     {{ $movie->director  }}
