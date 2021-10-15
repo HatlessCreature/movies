@@ -18,3 +18,6 @@
 </ul>
 
 @endsection
+@section('sidebar')
+@include('layouts.sidebar')
+@endsection

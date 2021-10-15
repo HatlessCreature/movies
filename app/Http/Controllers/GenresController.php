@@ -9,7 +9,8 @@ class GenresController extends Controller
 {
     public function show($genre)
     {
-        $movies = Movie::where('genre', $genre)->get();
-        return view('genres.show', compact('movies'));
+        $movies = Movie::all();
+        $moviesGenre = Movie::where('genre', $genre)->get();
+        return view('genres.show', compact('moviesGenre', 'movies'));
     }
 }
